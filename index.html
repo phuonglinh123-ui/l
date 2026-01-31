@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Người Đàn Ông Mang Tên Ove - Góc Chữa Lành</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:ital,wght@0,400;0,700;1,400&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container fade-in">
+    <header>
+        <img src="Anhbiasach.jpg" alt="Bìa sách Người đàn ông mang tên Ove" class="book-cover">
+        
+        <div class="media-box">
+            <p class="media-title">🎞️ Phim & Ký ức</p>
+            <video class="video-player" controls preload="auto">
+                <source src="thoigian.mp4" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+
+            <p class="media-title" style="margin-top: 20px;">🎧 Thuyết minh sách</p>
+            <audio class="audio-player" controls>
+                <source src="nghe.mp3" type="audio/mpeg">
+                Trình duyệt không hỗ trợ audio.
+            </audio>
+        </div>
+        <p class="intro-text">"Lắng nghe hơi thở của thời gian và ký ức..."</p>
+    </header>
+
+    <section>
+        <h2>Tóm tắt nội dung</h2>
+        <p>
+            Cuốn sách <strong>“Người Đàn Ông Mang Tên Ove”</strong> của tác giả Fredrik Backman kể về Ove - một người đàn ông già nua, khó tính, cộc cằn và không còn niềm vui nào trong cuộc sống. Sự xuất hiện của những người hàng xóm mới, cùng những sự kiện bất ngờ, dần dần khiến Ove thay đổi cách nhìn về thế giới quanh mình.
+        </p>
+        <p>
+            Tác phẩm không chỉ là câu chuyện về tình bạn, tình yêu mà còn phản ánh những giá trị về sự tha thứ và lòng kiên nhẫn. Cuốn sách đã nhanh chóng chiếm được cảm tình của độc giả và trở thành hiện tượng toàn cầu.
+        </p>
+    </section>
+
+    <section>
+        <h2>Thông tin thú vị</h2>
+        <ul class="info-list">
+            <li><strong>Nguồn cảm hứng bất ngờ:</strong> Backman viết sách sau khi đọc về một người đàn ông khó tính đòi nhân viên nhà hát xin lỗi vì không được ngồi cạnh vợ.</li>
+            <li><strong>Nhân vật Ove "gàn dở":</strong> Dù luôn càu nhàu về xe số tự động hay hàng xóm, Ove thực chất có trái tim nhân hậu, sẵn sàng giúp đỡ kẻ yếu.</li>
+            <li><strong>Sự chữa lành tréo ngoe:</strong> Hành trình Ove cố gắng rời bỏ thế gian liên tục bị gián đoạn bởi những hàng xóm phiền phức, giúp ông tìm lại gia đình mới.</li>
+            <li><strong>Triết lý:</strong> Đừng vội phán xét qua vẻ ngoài, và tình yêu thương luôn có sức mạnh chữa lành, kết nối mọi người.</li>
+            <li><strong>Văn phong dí dỏm:</strong> Tác giả sử dụng giọng văn châm biếm nhưng sâu lắng, khiến người đọc vừa cười vừa rơi nước mắt.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Cảm nhận cá nhân</h2>
+        <p>
+            Ove ban đầu là một ông già 59 tuổi cáu kỉnh, nguyên tắc và ghét giao tiếp. Tuy nhiên, đằng sau vẻ ngoài thô ráp ấy là nỗi cô đơn tột cùng sau khi vợ ông - bà Sonja - qua đời.
+        </p>
+        <p>
+            Câu chuyện không bi lụy mà mang lại sự ấm áp. Những người hàng xóm ồn ào đã giúp Ove tìm lại ý nghĩa cuộc sống. Tác phẩm nhấn mạnh: <em>"Điều làm nên một người đàn ông không phải là lời nói mà chính là hành động."</em>
+        </p>
+    </section>
+
+    <section class="quote-box">
+        "Người ta chưa bao giờ hỏi ông sống như thế nào trước khi gặp bà. Nhưng nếu có ai đó hỏi, Ove sẽ đáp rằng mình chưa từng sống."
+    </section>
+
+    <footer>
+        <p>Góc nhỏ dành cho những tâm hồn cần sự tĩnh lặng.</p>
+        <p>Thông tin liên hệ: <a href="mailto:lephuonglinh13062021@gmail.com" class="contact-email">lephuonglinh13062021@gmail.com</a></p>
+    </footer>
+</div>
+
+<script>
+    // Script tạo hiệu ứng chuyển động chữ và khối nhẹ nhàng khi di chuột
+    document.querySelectorAll('section').forEach(sec => {
+        sec.addEventListener('mousemove', (e) => {
+            const x = (window.innerWidth / 2 - e.pageX) / 45;
+            const y = (window.innerHeight / 2 - e.pageY) / 45;
+            sec.style.transform = `translateX(${x}px) translateY(${y}px)`;
+        });
+        sec.addEventListener('mouseleave', () => {
+            sec.style.transform = `translateX(0) translateY(0)`;
+        });
+    });
+</script>
+
+</body>
+</html>

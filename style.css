@@ -1,0 +1,162 @@
+/* TRANG TRÍ MANG PHONG CÁCH THANH TỊNH & CHỮA LÀNH */
+:root {
+    --zen-green: #6b705c; /* Xanh rêu trầm */
+    --paper-bg: #fdfaf5; /* Màu giấy cũ thanh tịnh */
+    --wood-brown: #a68a64; /* Màu gỗ nhạt */
+    --text-main: #3b3d33;
+}
+
+body {
+    background-color: var(--paper-bg);
+    color: var(--text-main);
+    font-family: 'Lora', serif;
+    margin: 0;
+    line-height: 1.8;
+    background-image: url('https://www.transparenttextures.com/patterns/natural-paper.png');
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* Hiệu ứng chuyển động mượt cho các Section */
+section {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid transparent;
+    cursor: default;
+}
+
+section:hover {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid var(--zen-green);
+    box-shadow: 0 20px 40px rgba(107, 112, 92, 0.1);
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--zen-green);
+    font-size: 2.5rem;
+    margin-top: 0;
+    border-bottom: 1px dashed var(--wood-brown);
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+/* Header & Media */
+header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.book-cover {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    transition: transform 0.6s ease;
+    margin-bottom: 30px;
+}
+
+.book-cover:hover {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.media-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+.media-title {
+    font-weight: bold; 
+    color: var(--zen-green);
+    margin-bottom: 10px;
+}
+
+.video-player {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    background: #000;
+    margin-bottom: 15px;
+}
+
+.audio-player {
+    width: 100%;
+    max-width: 550px;
+    height: 40px;
+}
+
+.intro-text {
+    font-style: italic; 
+    color: #999;
+}
+
+/* Danh sách thú vị */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    padding: 12px 0 12px 40px;
+    position: relative;
+    border-bottom: 1px dashed rgba(0,0,0,0.05);
+}
+
+.info-list li::before {
+    content: '🍃';
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+/* Trích dẫn */
+.quote-box {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: var(--wood-brown);
+    background: none;
+    border: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    color: #777;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contact-email {
+    color: var(--zen-green);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-email:hover {
+    color: var(--wood-brown);
+    text-decoration: underline;
+}
+
+/* Hiệu ứng fade-in khi load trang */
+.fade-in {
+    animation: fadeInAnim 1.5s ease-out;
+}
+
+@keyframes fadeInAnim {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
